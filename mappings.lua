@@ -11,13 +11,19 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(bufnr) end)
+        require("astronvim.utils.status").heirline.buffer_picker(
+          function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
+        )
       end,
       desc = "Pick to close",
     },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+    ["sh"] = { function() require("smart-splits").move_cursor_left() end, desc = "Move to left split" },
+    ["sj>"] = { function() require("smart-splits").move_cursor_down() end, desc = "Move to below split" },
+    ["sk"] = { function() require("smart-splits").move_cursor_up() end, desc = "Move to above split" },
+    ["sl"] = { function() require("smart-splits").move_cursor_right() end, desc = "Move to right split" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
