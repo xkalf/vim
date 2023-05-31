@@ -7,4 +7,5 @@ return {
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.colorscheme.dracula-nvim" },
 }
