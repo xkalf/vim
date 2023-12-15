@@ -5,9 +5,7 @@ return {
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
   -- { import = "astrocommunity.colorscheme.catppuccin" },
-  { import = "astrocommunity.pack.typescript" },
-  { import = "astrocommunity.pack.tailwindcss" },
-  { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.pack.php" },
   { import = "astrocommunity.colorscheme.dracula-nvim" },
+  { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.completion.copilot-lua-cmp" },
 }

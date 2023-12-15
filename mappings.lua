@@ -21,7 +21,7 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     ["sh"] = { function() require("smart-splits").move_cursor_left() end, desc = "Move to left split" },
-    ["sj>"] = { function() require("smart-splits").move_cursor_down() end, desc = "Move to below split" },
+    ["sj"] = { function() require("smart-splits").move_cursor_down() end, desc = "Move to below split" },
     ["sk"] = { function() require("smart-splits").move_cursor_up() end, desc = "Move to above split" },
     ["sl"] = { function() require("smart-splits").move_cursor_right() end, desc = "Move to right split" },
     -- quick save
